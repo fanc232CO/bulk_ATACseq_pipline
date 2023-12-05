@@ -44,4 +44,5 @@ run_HMMRATAC=/home/fancong/anaconda3/envs/bulk_ATAC/bin/HMMRATAC
 fn_bam=../3_pQC/splited/${bn}_shift.bam
 fn_bam_index=../3_pQC/splited/${bn}_shift.bam.bai
 genome_info=/home/yanglab_data3/user/fancong/fan_database/ATACseq_geneinfo/mm10_genometable.txt
-$run_HMMRATAC -b $fn_bam -i $fn_bam_index -g $genome_info
+black_list=/home/yanglab_data3/user/fancong/fan_database/ENCODE_blacklist/mm10.blacklist.bed
+$run_HMMRATAC -b $fn_bam -i $fn_bam_index -g $genome_info -e $black_list
