@@ -10,7 +10,7 @@ args<-commandArgs(T)
 bn<-args[1]
 fn_pic_out<-paste0('./',bn,'_ATACseqQC.pdf')
 fn_data_out<-paste0('./',bn,'_ATACseqQC.Rdata')
-seqlev<-paste0('chr',c(1:22,'X','Y'))
+seqlev<-paste0('chr',c(1:19,'X','Y')) #Mouse have only 20 chromosomes
 
 #step1-bamQC
 fn_bam=paste0('./',bn,'_clean.bam')
